@@ -19,4 +19,6 @@ Welcome to the Firestone V2 AutoFisher! This tool is designed to automate fishin
 - **Reliability**: This tool is not 100% reliable and may require monitoring and adjustments based on different game conditions and setups.
 - **Version**: 0.01
 
-Feel free to report any issues or contribute improvements to enhance the AutoFisher's performance!
+![image](https://github.com/BBQuack/FS-V2-autofish/assets/96356882/c3c98480-6ddf-4c0f-80e7-0da9512a295e)
+
+Feel free to report any issues or contribute improvements!
