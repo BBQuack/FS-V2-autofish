@@ -162,13 +162,16 @@ class AutoFisher:
                 current_image_np = np.array(current_image)
                 change_percentage = self.image_changed(initial_image_np, current_image_np)
                 self.change_percentage_var.set(f"White Percentage: {change_percentage * 100:.2f}%")
-                if change_percentage > .9:
+                if change_percentage > .2:
                     initial_image = ImageGrab.grab(bbox=self.boundary)
                     initial_image_np = np.array(initial_image)
                     self.adjust_threshold(initial_image_np)
                     time.sleep(.5)
                     change_percentage = self.image_changed(initial_image_np, current_image_np)
+                    print(change_percentage)
+                    continue
                     
+                
                 if change_percentage > self.threshold:
                     self.status.set("Active - Catching")
                     pyautogui.click()  # Click to catch
@@ -186,7 +189,7 @@ class AutoFisher:
             gray_image = np.mean(image, axis=2)
             bw_image = (gray_image > threshold).astype(np.uint8) * 255
             black_percentage = np.sum(bw_image == 0) / bw_image.size
-            if black_percentage >= 0.9:
+            if black_percentage >= 0.95:
                 self.BWthreshold = threshold
                 self.bubble_threshold_slider.set(threshold)
                 break
