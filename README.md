@@ -16,8 +16,9 @@ Welcome to the Firestone V2 AutoFisher! This tool is designed to automate fishin
 ## Notes
 
 - **Weather Limitation**: The tool does not operate effectively in rain. If it's raining, try positioning yourself under a bridge to continue fishing.
-- **Reliability**: This tool is not 100% reliable and may require monitoring and adjustments based on different game conditions and setups.
-- **Version**: 0.01
+- **Day Cycle**: When it's changing to day/night the light may mess it up and cause premature click. 
+- **Reliability**: This tool is not 100% reliable (Don't leave it alone, it will break) and may require monitoring and adjustments based on different game conditions and setups.
+- **Version**: 0.01 
 
 ![image](https://github.com/BBQuack/FS-V2-autofish/assets/96356882/c3c98480-6ddf-4c0f-80e7-0da9512a295e)
 
