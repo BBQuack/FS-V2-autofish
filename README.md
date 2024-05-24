@@ -1,6 +1,6 @@
 # Firestone V2 AutoFisher
 
-Welcome to the Firestone V2 AutoFisher! This tool is designed to automate fishing in Roblox games by detecting changes in the screen's visuals.
+Welcome to the Firestone V2 AutoFisher! This tool is designed to automate fishing in Roblox games by detecting changes in the screen's visuals. Python 3.9
 
 ## How to Use
 
