@@ -1,25 +1,33 @@
 # Firestone V2 AutoFisher
 
-Welcome to the Firestone V2 AutoFisher! This tool is designed to automate fishing in Roblox games by detecting changes in the screen's visuals. Python 3.9
+Welcome to the Firestone V2 AutoFisher! This tool is specifically designed to help you automate the fishing process in Roblox games. It works by monitoring changes in the visuals on your screen to detect when a fish bites. This guide will help new users understand how to set up and effectively use the AutoFisher.
 
-## How to Use
+## Quick Setup Guide
 
-1. **Positioning**: Stand on the edge of a dock and look at the water in first person.
-2. **Graphics Settings**: Set Roblox's graphic quality to the lowest to enhance the script's performance.
-3. **Boundary Setup**: It is recommended to use the center boundary. Ensure that the fishing bobber is visible within the boundary towards the bottom.
-4. **Starting the Tool**: Press `F4` to start the AutoFisher.
+**Step 1: Positioning**
+- Stand at the edge of a dock in Roblox, and make sure you're facing the water in first-person view.
 
-## Debugging
+**Step 2: Graphics Settings**
+- For optimal performance, adjust your Roblox graphics quality to the lowest setting. This helps the AutoFisher detect changes more efficiently.
 
-- If the AutoFisher starts clicking too soon (i.e., before a fish bites), you may need to increase the white percentage threshold in the settings to delay the response time.
+**Step 3: Boundary Setup**
+- Use the center boundary setting to ensure that the fishing bobber is within this area towards the bottom of your screen.
 
-## Notes
+**Step 4: Starting and Stopping**
+- To start the AutoFisher, simply press `F4`. Press `F4` again to stop the tool.
 
-- **Weather Limitation**: The tool does not operate effectively in rain. If it's raining, try positioning yourself under a bridge to continue fishing.
-- **Day Cycle**: When it's changing to day/night the light may mess it up and cause premature click. 
-- **Reliability**: This tool is not 100% reliable (Don't leave it alone, it will break) and may require monitoring and adjustments based on different game conditions and setups.
-- **Version**: 0.01 
+## Troubleshooting Tips
 
-![image](https://github.com/BBQuack/FS-V2-autofish/assets/96356882/c3c98480-6ddf-4c0f-80e7-0da9512a295e)
+- **Premature Clicking**: If the tool starts reacting too early, adjust the white percentage threshold in the settings. This will help delay the tool's response until a fish actually bites.
+  
+## Important Notes
 
-Feel free to report any issues or contribute improvements!
+- **Weather Sensitivity**: The tool struggles in rainy conditions. For uninterrupted fishing, position yourself under a bridge during rain.
+- **Light Changes**: Transitions from day to night can affect detection. Keep an eye on this if you notice premature clicking.
+- **Monitoring**: The AutoFisher is not fully autonomous and may require your supervision to ensure it operates correctly under varying game conditions.
+
+## Software Information
+
+- **Version**: 0.01
+
+For feedback or to report issues, feel free to visit our GitHub page or contact us directly!
