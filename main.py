@@ -14,7 +14,7 @@ class AutoFisher:
         
         # Title and description
         self.title_label = tk.Label(master, text="Firestone V2 AutoFisher", font=("Helvetica", 16, "bold"))
-        self.description_label = tk.Label(master, text="Stand on the edge of a dock and look at the water in 1st person. Use lowest Roblox's Graphic Quality. I recommend using center boundary. Ensure the bobber is visible in boundary at towards bottom. Press f4 to start. \n Debugging: If it is clicking too soon, increase white percentage. \n Notes: Does not work in rain, go under a bridge .not a 100% reliable fisher. Version 0.01", font=("Helvetica", 10))
+        self.description_label = tk.Label(master, text="Welcome to Firestone V2 AutoFisher! To start, position yourself at the edge of a dock in Roblox, facing the water in first-person. Set the graphics quality to the lowest for best performance. Set the boundary, use center boundary setting for best results. Ensure the fishing bobber is visible near the bottom of this area. Press 'F4' to start or stop the AutoFisher. \nDebugging: If the tool reacts too soon, increase the white percentage threshold in the settings. \nNotes: The tool does not operate well in rain. Seeking shelter under a bridge may help. Remember, this tool may require monitoring and is not 100% reliable. Version 0.01", font=("Helvetica", 10))
         self.status = tk.StringVar()
         self.status.set("Inactive")
         self.change_percentage_var = tk.StringVar()
@@ -150,7 +150,7 @@ class AutoFisher:
         while self.running:
             pyautogui.click()  # Click to cast
             self.status.set("Active - Waiting for Fish")
-            time.sleep(1)
+            time.sleep(.5)
             initial_image = ImageGrab.grab(bbox=self.boundary)
             initial_image_np = np.array(initial_image)
 
@@ -175,12 +175,12 @@ class AutoFisher:
                 if change_percentage > self.threshold:
                     self.status.set("Active - Catching")
                     pyautogui.click()  # Click to catch
-                    time.sleep(1)
+                    time.sleep(.5)
                     break
                 time.sleep(0.5)
 
             self.status.set("Active - Delay Between Casts")
-            time.sleep(2)  # Wait before casting again
+            time.sleep(.5)  # Wait before casting again
 
         self.status.set("Inactive")
 
